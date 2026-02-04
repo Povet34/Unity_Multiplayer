@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: -3666665384166556275}
   - component: {fileID: 8805747818304595990}
   - component: {fileID: -2845379990351060159}
-  - component: {fileID: -3011313732755887288}
+  - component: {fileID: -5580587776314697936}
   m_Layer: 8
   m_Name: PlayerArmature_Networked
   m_TagString: Player
@@ -369,7 +369,7 @@ CharacterController:
     m_Bits: 0
   m_LayerOverridePriority: 0
   m_ProvidesContacts: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 3
   m_Height: 1.8
   m_Radius: 0.28
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ServerPlayerMove
   ShowTopMostFoldoutHeaderGroup: 1
---- !u!114 &-3011313732755887288
+--- !u!114 &-5580587776314697936
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -642,11 +642,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1188882996087991077}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: da95357824d5dc64abe7d191b45d2b88, type: 3}
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ClientNetworkTransform
+  m_EditorClassIdentifier: Unity.Netcode.Runtime::Unity.Netcode.Components.NetworkTransform
   ShowTopMostFoldoutHeaderGroup: 1
-  NetworkTransformExpanded: 1
+  NetworkTransformExpanded: 0
   AutoOwnerAuthorityTickOffset: 1
   PositionInterpolationType: 0
   RotationInterpolationType: 0
