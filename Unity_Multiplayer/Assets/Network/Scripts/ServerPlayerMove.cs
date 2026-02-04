@@ -1,3 +1,4 @@
+using StarterAssets;
 using Unity.Netcode;
 using UnityEngine;
 
@@ -21,5 +22,7 @@ public class ServerPlayerMove : NetworkBehaviour
         var spawnPoint = ServerPlayerSpawnPoints.Instance.GetRandomSpawnPoint();
         var spawnPosition = spawnPoint ? spawnPoint.transform.position : Vector3.zero;
         transform.position = spawnPosition;
+
+        GetComponent<ThirdPersonController>().enabled = true;
     }
 }
